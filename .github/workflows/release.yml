@@ -25,6 +25,7 @@ on:
     tags: ["v*"]
 
 permissions:
+  id-token: write
   contents: read
 
 jobs:
@@ -104,7 +105,7 @@ jobs:
       - name: Leak scan (source + built artifacts)
         run: python scripts/leak_scan.py --require-dist
 
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+      - uses: DevinoSolutions/artifact/upload@v1
         with:
           name: dist
           path: dist/
@@ -119,7 +120,7 @@ jobs:
     permissions:
       id-token: write # required for OIDC trusted publishing
     steps:
-      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+      - uses: DevinoSolutions/artifact/download@v1
         with:
           name: dist
           path: dist/
