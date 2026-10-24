@@ -5,13 +5,13 @@ build-backend = "hatchling.build"
 [project]
 name = "superbooks"
 version = "0.1.0"
-description = "Official SuperBooks SDK for Python"
+description = "Official Python SDK for SuperBooks (superbooks.io), the AI bookkeeping and finance app for freelancers and small businesses"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
 authors = [{ name = "SuperBooks", email = "support@superbooks.io" }]
-keywords = ["superbooks", "accounting", "finance", "sdk"]
+keywords = ["superbooks", "superbooks.io", "accounting", "bookkeeping", "ai-bookkeeping", "invoicing", "finance", "mcp", "sdk"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",

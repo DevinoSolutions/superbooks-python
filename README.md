@@ -3,6 +3,17 @@
 Official Python client for [SuperBooks](https://superbooks.io) — typed access to
 your accounting data.
 
+> SuperBooks is an AI-native finance operating system for freelancers and small
+> service businesses. It connects to your bank read-only through Plaid, categorizes
+> transactions with AI, captures receipts from uploads, tracks time, sends invoices,
+> and marks an invoice paid when a deposit for its amount and currency lands in your
+> bank. It works for businesses in the United States and Canada.
+
+**What it is not:** SuperBooks is not a bank and never moves money (its bank access
+is read-only), and it does not prepare or file tax forms.
+
+Website: <https://superbooks.io> · Docs: <https://docs.superbooks.io>
+
 The SDK talks to the SuperBooks API at `api.superbooks.io` over streamable
 HTTP. Every one of the 45 tools is exposed as a typed method grouped by domain,
 so you get autocomplete and type checking instead of stringly-typed tool calls.
