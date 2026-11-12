@@ -213,13 +213,13 @@ being replayed.
 
 ## Connecting an agent client
 
-SuperBooks hosts a remote tool server at `https://api.superbooks.io/mcp`. Any
+SuperBooks hosts a remote tool server at `https://app.superbooks.io/mcp`. Any
 agent client that can call a remote server with a custom header can connect to
 it directly with your API key — the SDK is not involved, and nothing needs to
 run locally. For example, with Claude Code:
 
 ```bash
-claude mcp add --transport http superbooks https://api.superbooks.io/mcp \
+claude mcp add --transport http superbooks https://app.superbooks.io/mcp \
   --header "Authorization: Bearer sb_your_api_key_here"
 ```
 
